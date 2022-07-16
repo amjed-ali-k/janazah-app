@@ -1,9 +1,13 @@
 import { StatusBar } from "expo-status-bar";
-import React, { FC } from "react";
+import React from "react";
 import { View, Text } from "react-native";
 // import { StackScreenProps } from "@react-navigation/native-stack";
+import type { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { NavigatorParamList } from "../navigators";
 
-export default function WelcomeScreen() {
+type Props = NativeStackScreenProps<NavigatorParamList, "welcome">;
+
+export default function WelcomeScreen(props: Props) {
   return (
     <View className="flex-1 items-center justify-center bg-white">
       <View className="bg-yellow-100/50 p-4 rounded-lg m-2 border border-yellow-100">
