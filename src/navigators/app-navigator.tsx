@@ -15,6 +15,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // import { WelcomeScreen, DemoScreen, DemoListScreen } from "../screens";
 import { navigationRef, useBackButtonHandler } from "./navigation-utils";
 import WelcomeScreen from "../screens/welcome-screen";
+import IndividualScreen from "../screens/individual-screen";
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -32,6 +33,7 @@ export type NavigatorParamList = {
   welcome: undefined;
   demo: undefined;
   demoList: undefined;
+  single: undefined;
   // 🔥 Your screens go here
 };
 
@@ -47,6 +49,8 @@ const AppStack = () => {
       initialRouteName="welcome"
     >
       <Stack.Screen name="welcome" component={WelcomeScreen} />
+      <Stack.Screen name="single" component={IndividualScreen} />
+
       {/* <Stack.Screen name="demo" component={DemoScreen} /> */}
       {/* <Stack.Screen name="demoList" component={DemoListScreen} /> */}
       {/** 🔥 Your screens go here */}

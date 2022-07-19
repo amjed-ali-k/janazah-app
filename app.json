@@ -14,9 +14,8 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "githubUrl": "https://github.com/amjed-ali-k/janazah-app",
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
